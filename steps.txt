@@ -1,0 +1,24 @@
+======configurando los paquetes ======================
+touch index.js ---cree un archivo por consola bash
+npm init ---inicializo el archivo package.json
+npm i espress ---instalo la libreria express (manejo de rutas)
+npm i nodemon ---instalo la libreria nodemon (esto ejecuta cada cambio en consola)
+"serve": "nodemon index.js" ---Agrego esto en el .json para correr con nodemon
+npm run serve ---Corro por terminal el nodemon
+
+====== Configurando el index.js ============
+require express
+require body-parse ---Esto me permite cojer lo que contiene mi archivo index.html
+
+creo mi app lo igualo a express
+mi app usa bodyParse con la url encodeada, lo desestructuro su extends con verdadero
+
+-->app le meto get (a la ruta, lo que haga, pero con parametros (req, res) trabjo con el reponse)
+-->app le meto un listen (al puerto, lo que diga cuando hay conexion)
+
+
+-->app le modifico el get( a la ruta, con el response a un sendfile(__dirname <-- me saca la ruta real + "la ruta de mi html"))
+-->app le meto un Post(la ruta donde resive los datos, 
+    lo que jalo del index con el request.body.(el nombre de la equite que se edita o captura)
+    -->res le hago un send para que me responda lo que quiera y le meto lo que jale concatenandolo.
+)
