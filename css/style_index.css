@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* header=========== */
+.header{
+    width: 100%;
+    background-color: #fdfdfd;
+    font-family: 'Abel', sans-serif;
+    border-bottom: 1px solid #ddd;
+}
+
+.header .title{
+    padding: 1rem;
+    font-family: 'Abel', sans-serif;
+}
+
+.header .navbar .list{
+    list-style-type: none;
+    margin: auto;
+    display: flex;
+    width: 95%;
+    max-width: 70rem;
+    /* background-color: aliceblue; */
+    justify-content: space-between;
+    font-size: 2rem;
+    color: #000;
+}
+
+.list li a{
+    color: #000;
+}
+
+/* ============ main ========= */
+
+.main{
+    width: 90%;
+    max-width: 120rem;
+    margin: 4rem auto 0 auto;
+    text-align: center;
+    /* display: flex; */
+}
+
+.main_title{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+}
+
+form{
+    margin: auto;
+    width: 95%;
+    max-width: 80rem;
+    background-color: #ddd;
+    padding: 1rem;
+}
+
+form input, form button{
+    border: 1px solid rgba(245, 245, 245,1);
+    width: 95%;
+    max-width: 30rem;
+    margin: 0.2rem auto;
+    display: block;
+    background-color: #fdfafa;
+    padding: .5rem;
+    border-radius: 2px;
+}
