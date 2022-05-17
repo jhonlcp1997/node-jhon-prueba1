@@ -7,6 +7,7 @@ const app = express();
 
 // app use body when request to index.html
 app.use(bodyParser.urlencoded({extends:true}));
+app.use(express.static(__dirname));
 
 // with this i acces into route 
 app.listen(3000, ()=>{
@@ -22,6 +23,8 @@ app.get("/", (req, res)=>{
 
 // response with result but request to index.html parts
 app.post("/", (req, res)=>{
-    let nombre = req.body.name;
-    res.send("Bienvenido al IMM" + nombre);
+    // let nombre = req.body.firstName;
+    // let apellido = req.body.lastName;
+    res.sendFile(__dirname + "/views/response.html");
+    // res.send(`<h2>${nombre} ${apellido}</h2>`);
 })
