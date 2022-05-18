@@ -76,3 +76,7 @@ form input, form button{
     padding: .5rem;
     border-radius: 2px;
 }
+
+input[type='range']{
+    padding: 0.5rem 0;
+}

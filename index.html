@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="static/style_index.css">
     <title>Experimento</title>
 </head>
+
 <body>
     <header class="header">
         <h1 class="title">PRUEBA: RESERVE UNA CITA IMMETABOLICO</h1>
@@ -29,8 +31,29 @@
         <form action="/" method="post">
             <input type="text" name="firstName" placeholder="Nombre..." id="firstName">
             <input type="text" name="lastName" placeholder="Apellido..." id="lastName">
+            <input type="time" name="date" id="date">
+            <input type="email" name="email" id="email" placeholder="Correo...">
+            <input type="password" name="password" id="password" placeholder="Contraseña">
+            <input type="reset" name="reset" id="reset" value="Restablecer">
+            <h3>Más detalles</h3>
+            <Strong>Umbral del dolor</Strong>
+            <input type="range" name="range" list="tickmarks">
+            <datalist id="tickmarks">
+                <option value="0" label="0"></option>
+                <option value="10">1</option>
+                <option value="20"></option>
+                <option value="30"></option>
+                <option value="40"></option>
+                <option value="50" label="5"></option>
+                <option value="60"></option>
+                <option value="70"></option>
+                <option value="80"></option>
+                <option value="90"></option>
+                <option value="100" label="10"></option>
+            </datalist>
             <button type="submit">Enviar</button>
         </form>
     </main>
 </body>
+
 </html>
