@@ -1,6 +1,7 @@
 // require libreries only use require
 const express = require('express');
 const bodyParser = require("body-parser");
+const urlimg = 'https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__340.jpg';
 
 // create app with express
 const app = express();
@@ -29,12 +30,15 @@ app.post("/", (req, res)=>{
     let email = req.body.email;
     let password = req.body.password;
     let range = req.body.range;
+    let image = req.body.file;
+
     // res.sendFile(__dirname + "/views/response.html");
     res.send(`
-        <h2>${nombre} ${apellido}</h2>
+        <h2>Usuario: ${nombre} ${apellido}</h2>
         <h2>Fecha: ${fecha}</h2>
         <h2>email: ${email}</h2>
         <h2>Contraseña: ${password}</h2>
         <h2>Rango de dolor: ${range}</h2>
+        <img src="${urlimg}" />
     `);
 })
