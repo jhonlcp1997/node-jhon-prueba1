@@ -3,6 +3,14 @@ const express = require('express');
 const bodyParser = require("body-parser");
 const urlimg = 'https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__340.jpg';
 
+// ? intento de FETCH
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
+// ? intento de FETCH
+
+// ? intento correo
+const emails = require('./static/email');
+// ? intento correo
+
 // create app with express
 const app = express();
 
@@ -32,7 +40,9 @@ app.post("/", (req, res)=>{
     let range = req.body.range;
     let image = req.body.file;
 
-    // res.sendFile(__dirname + "/views/response.html");
+    res.sendFile(__dirname + "/views/response.html");
+    peticion();
+    emails(nombre);
     res.send(`
         <h2>Usuario: ${nombre} ${apellido}</h2>
         <h2>Fecha: ${fecha}</h2>
@@ -41,4 +51,34 @@ app.post("/", (req, res)=>{
         <h2>Rango de dolor: ${range}</h2>
         <img src="${urlimg}" />
     `);
+
+    // ? intento de FETCH
+    // const data_fecth=peticion();
+    // res.send(data_fecth.id)
+    // ? intento de FETCH
 })
+
+// ? INTENTO DE FETCH
+
+const peticion = ()=>{
+    // const data = await fetch("https://api.openweathermap.org/data/2.5/weather?q=london&appid=89fe98aaea5cb46b35840f20e38ebfd9&units=metric");
+    console.log("Entro a la petición");
+    setTimeout(async () => {
+        console.log("espero un async");
+        try {
+            const peticion = await fetch("https://reqres.in/api/users?page=2");
+            const { data } = await peticion.json();
+            // setUsuarios(data);
+            // setCargando(false);
+            console.log(data);
+            console.log(data[1]);
+            if(data == ''){
+                console.log("La peticion trae un vacio existencial");
+            } else{
+                return data;
+            }
+        }catch(error){
+            console.log(error);
+        }
+    }, 1000);
+}
