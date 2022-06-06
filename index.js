@@ -40,9 +40,22 @@ app.post("/", (req, res)=>{
     let range = req.body.range;
     let image = req.body.file;
 
+    let fechahora =  new Date();
+    let timestamp = fechahora.toLocaleTimeString();
+    
+    let props = {
+        nombre,
+        apellido,
+        fecha,
+        email,
+        password,
+        range,
+        timestamp
+    }
+
     res.sendFile(__dirname + "/views/response.html");
     peticion();
-    emails(nombre);
+    emails(props);
     res.send(`
         <h2>Usuario: ${nombre} ${apellido}</h2>
         <h2>Fecha: ${fecha}</h2>

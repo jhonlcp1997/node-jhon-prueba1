@@ -11,7 +11,13 @@ const email = (props) => {
         }
     });
 
-    var mensaje = `Hola desde nodejs... ${props}`;
+    var mensaje = `
+    Hola desde nodejs... ${props.nombre} ${props.apellido} 
+    <Strong> Se que la hora es ${props.fecha} </Strong>
+    Pero tu email ${props.email} no concuerda con tu ${props.password} 
+    y que tu rango de dolor es ${props.range}
+    fecha: ${props.timestamp}
+    `;
 
     var mailOptions = {
         from: 'jhcruz.imm@gmail.com',
