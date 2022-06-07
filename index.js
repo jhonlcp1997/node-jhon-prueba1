@@ -53,9 +53,10 @@ app.post("/", (req, res)=>{
         timestamp
     }
 
-    res.sendFile(__dirname + "/views/response.html");
-    peticion();
+    // ? res.sendFile(__dirname + "/views/response.html");
+
     emails(props);
+
     res.send(`
         <h2>Usuario: ${nombre} ${apellido}</h2>
         <h2>Fecha: ${fecha}</h2>
@@ -70,28 +71,3 @@ app.post("/", (req, res)=>{
     // res.send(data_fecth.id)
     // ? intento de FETCH
 })
-
-// ? INTENTO DE FETCH
-
-const peticion = ()=>{
-    // const data = await fetch("https://api.openweathermap.org/data/2.5/weather?q=london&appid=89fe98aaea5cb46b35840f20e38ebfd9&units=metric");
-    console.log("Entro a la petición");
-    setTimeout(async () => {
-        console.log("espero un async");
-        try {
-            const peticion = await fetch("https://reqres.in/api/users?page=2");
-            const { data } = await peticion.json();
-            // setUsuarios(data);
-            // setCargando(false);
-            console.log(data);
-            console.log(data[1]);
-            if(data == ''){
-                console.log("La peticion trae un vacio existencial");
-            } else{
-                return data;
-            }
-        }catch(error){
-            console.log(error);
-        }
-    }, 1000);
-}

@@ -1,4 +1,4 @@
-//Requerimos el paquete
+//Requerimos el paquete para email de node js
 var nodemailer = require('nodemailer');
 
 const email = (props) => {
