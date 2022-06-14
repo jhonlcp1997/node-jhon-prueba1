@@ -57,6 +57,10 @@ app.post("/", (req, res)=>{
 
     emails(props);
 
+    // Todo: Esto es para evitar que el envio de datos por parte del node js no se complique con caracteres ñ commillas etc
+    res.setHeader('Content-Type','charset=utf-8');
+    res.writeHead(200, {"Content-Type": "text/html;charset=UTF-8"});
+
     res.send(`
         <h2>Usuario: ${nombre} ${apellido}</h2>
         <h2>Fecha: ${fecha}</h2>
