@@ -68,6 +68,7 @@ app.post("/", (req, res)=>{
         <h2>Contraseña: ${password}</h2>
         <h2>Rango de dolor: ${range}</h2>
         <img src="${urlimg}" />
+        <p>TimeStamp: ${timestamp}</p>
     `);
 
     // ? intento de FETCH
