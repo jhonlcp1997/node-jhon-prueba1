@@ -3,6 +3,7 @@ touch index.js ---cree un archivo por consola bash
 npm init ---inicializo el archivo package.json
 npm i espress ---instalo la libreria express (manejo de rutas)
 npm i nodemon ---instalo la libreria nodemon (esto ejecuta cada cambio en consola)
+npm i dotenv ---instalo para poder usar las props de los .env
 "serve": "nodemon index.js" ---Agrego esto en el .json para correr con nodemon
 npm run serve ---Corro por terminal el nodemon
 
@@ -22,3 +23,9 @@ mi app usa bodyParse con la url encodeada, lo desestructuro su extends con verda
     lo que jalo del index con el request.body.(el nombre de la equite que se edita o captura)
     -->res le hago un send para que me responda lo que quiera y le meto lo que jale concatenandolo.
 )
+
+==========Configurando paquetes para poder usar en vista con EJS==========
+npm i ejs
+
+===index js===
+app.set('view engine', 'ejs');
