@@ -82,17 +82,17 @@ app.post("/", (req, res)=>{
     //     <h2>Contraseña: ${password}</h2>
     //     <h2>Rango de dolor: ${range}</h2>
     //     <img src="${urlimg}" />
-        <p>TimeStamp: ${timestamp}</p>
+        // <p>TimeStamp: ${timestamp}</p>
     // `);
-    res.send(`
-        <h2>Usuario: ${nombre} ${apellido}</h2>
-        <h2>Fecha: ${fecha}</h2>
-        <h2>email: ${email}</h2>
-        <h2>Contraseña: ${password}</h2>
-        <h2>Rango de dolor: ${range}</h2>
-        <img src="${urlimg}" />
-        <p>TimeStamp: ${timestamp}</p>
-    `);
+    // res.send(`
+    //     <h2>Usuario: ${nombre} ${apellido}</h2>
+    //     <h2>Fecha: ${fecha}</h2>
+    //     <h2>email: ${email}</h2>
+    //     <h2>Contraseña: ${password}</h2>
+    //     <h2>Rango de dolor: ${range}</h2>
+    //     <img src="${urlimg}" />
+    //     <p>TimeStamp: ${timestamp}</p>
+    // `);
 
     // ? intento de FETCH
     // const data_fecth=peticion();
