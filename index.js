@@ -35,7 +35,7 @@ app.listen(port, ()=>{
 // response route "/"
 app.get("/", (req, res)=>{
     res.sendFile(__dirname + "/index.html");
-    console.log(__dirname);
+    // console.log(__dirname);
     // res.render('index', {titulo: "mi titulo dinámico"});
 })
 
