@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style_index.css">
+    <link rel="stylesheet" href="/css/style_index.css">
     <title>Experimento</title>
 </head>
 
@@ -29,8 +29,9 @@
     <main class="main">
         <h2 class="main_title">Ingrese sus datos</h2>
         <form action="/" method="post">
-            <input type="text" name="firstName" placeholder="Nombre..." id="firstName">
-            <input type="text" name="lastName" placeholder="Apellido..." id="lastName">
+            <input type="text" name="firstName" placeholder="Nombre..." id="firstName" required>
+            <input type="text" name="lastName" placeholder="Apellido..." id="lastName" required>
+            <input type="text" name="place" placeholder="Lugar..." id="place" required>
             <input type="time" name="date" id="date">
             <input type="email" name="email" id="email" placeholder="Correo...">
             <input type="password" name="password" id="password" placeholder="Contraseña">
