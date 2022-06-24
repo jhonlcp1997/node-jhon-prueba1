@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EJS</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
+
 <body>
-    <h1>Usuario enviado</h1>
-    <p><strong>Detalles</strong></p>
-    <h2>Nombre: <%= nombre %></h2>
-    <h2>Apellido: <%= apellido %></h2>
-    <h2>Hora:<%= fecha %></h2>
-    <h3>Temperatura: <%= temp %> °C</h3>
-    <img src=<%=imageURL%> /> 
+    <h1 class="text-center text-primary">Usuario enviado</h1>
+    <div class="row">
+        <p class="h2 text-light bg-dark"><strong>Detalles</strong></p>
+        <h2 class="border border-2">Nombre: <%= nombre %></h2>
+        <h2 class="border border-2">Apellido: <%= apellido %></h2>
+        <h2 class="border border-2">Hora:<%= fecha %></h2>
+        <h3 class="border border-2">Temperatura: <%= temp %> °C</h3>
+    </div>
+    <!-- <img src=<%=imageURL%> />  -->
 </body>
+
 </html>

@@ -41,7 +41,17 @@ app.get("/", (req, res)=>{
 
 app.get("/services", (req, res)=>{
     // res.sendFile(__dirname + "/index.html");
-    res.render('services', {titleServices: "title dinamic sercives"});
+    let nombre = "holas";
+    let apellido = "holas";
+    let fecha = "holas";
+    let temp = "holas";
+    let imageURL = "#";
+    let password = "holas";
+    let range = "holas";
+    let image = "holas";
+    let place = "holas";
+
+    res.render(__dirname + '/public/views/index', {nombre, apellido, fecha, temp, imageURL});
 })
 
 // response with result but request to index.html parts
@@ -73,7 +83,7 @@ app.post("/", (req, res)=>{
 
     // ? res.sendFile(__dirname + "/views/response.html");
 
-    emails(props);
+    // emails(props);
 
     // Todo: Esto es para evitar que el envio de datos por parte del node js no se complique con caracteres ñ commillas etc
     // res.setHeader('Content-Type','charset=utf-8');
