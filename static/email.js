@@ -14,7 +14,7 @@ const email = (props) => {
     // Todo: Esto se mostrará como mensaje en el email del receptor
     var mensaje = `
     Hola desde nodejs... ${props.nombre} ${props.apellido} 
-    <Strong> Se que la hora es ${props.fecha} </Strong>
+    Se que la hora es ${props.fecha} 
     Pero tu email ${props.email} no concuerda con tu ${props.password} 
     y que tu rango de dolor es ${props.range}
     fecha: ${props.timestamp}
