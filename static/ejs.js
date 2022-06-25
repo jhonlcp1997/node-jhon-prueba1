@@ -29,7 +29,7 @@ const exportEjs = (res, props) =>{
             
             // ? intento de agregar ejs
             
-            res.render(props.directory+ "/public/views/index", {nombre, apellido, fecha, temp, imageURL});
+            res.render(props.directory+ "/public/views/index", {nombre, apellido, fecha, place, temp, imageURL});
 
             // ? intento de agregar ejs
 

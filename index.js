@@ -51,7 +51,7 @@ app.get("/services", (req, res)=>{
     let image = "holas";
     let place = "holas";
 
-    res.render(__dirname + '/public/views/index', {nombre, apellido, fecha, temp, imageURL});
+    res.render(__dirname + '/public/views/index', {nombre, apellido, fecha, place, temp, imageURL});
 })
 
 // response with result but request to index.html parts
