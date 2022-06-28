@@ -81,6 +81,16 @@ app.post("/", (req, res)=>{
         directory
     }
 
+    var today = new Date();
+    var options = {
+        weekday: "long",
+        day: "numeric",
+        month: "long"
+    };
+
+    var day = today.toLocaleDateString("es-PE", options);
+    console.log(day);
+
     // ? res.sendFile(__dirname + "/views/response.html");
 
     // emails(props);
