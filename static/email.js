@@ -14,11 +14,11 @@ const email = (props) => {
     // Todo: Esto se mostrará como mensaje en el email del receptor
     var mensaje = `
     Hola desde nodejs... ${props.nombre} ${props.apellido} 
-    Se que la hora es ${props.timestamp} 
-    No sabia que eras de ${props.place}
-    Pero tu email ${props.email} no concuerda con tu ${props.password} 
-    y que tu rango de dolor es ${props.range}
-    fecha: ${props.fecha}
+    Se que la hora es: ${props.timestamp} 
+    No sabia que eras de: ${props.place}
+    Pero tu email  -> ${props.email} <- no concuerda con tu -> ${props.password} 
+    y que tu rango de dolor es: ${props.range}
+    Fecha de nacimiento: ${props.fecha}
     `;
 
     var mailOptions = {
