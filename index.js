@@ -91,8 +91,8 @@ app.post("/", (req, res) => {
 
   // ? res.sendFile(__dirname + "/views/response.html");
 
-  emails(props);
-  createUser(props);
+  // emails(props);
+  // createUser(props);
 
   // Todo: Esto es para evitar que el envio de datos por parte del node js no se complique con caracteres ñ commillas etc
   // res.setHeader('Content-Type','charset=utf-8');
