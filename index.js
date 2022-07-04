@@ -2,12 +2,14 @@
 require('dotenv').config();
 const express = require('express');
 const bodyParser = require("body-parser");
+const cors = require("cors");
 
 // Todo: intento correo->funcionó
 const emails = require('./static/email');
 const exportEjs = require('./static/ejs');
 const dbConnect = require('./config/mongo');
 const { createUser } = require('./controllers/users');
+const jsonDatos = require(__dirname + '/jsonDatos.json');
 
 
 // create app with express
@@ -17,9 +19,11 @@ const app = express();
 app.use(bodyParser.urlencoded({ extends: true }));
 app.use(express.static(__dirname + "/public"));
 
+app.use(cors());
 // app use motor de plantillas
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views')
+
 
 // get PORT from .env
 const port = process.env.PORT || 3000;
@@ -31,8 +35,13 @@ app.listen(port, () => {
 
 // Todo ====================================================
 
+app.get('/', (req, res)=>{
+  console.log(jsonDatos);
+  res.send({jsonDatos});
+})
+
 // response route "/"
-app.get("/", (req, res) => {
+app.get("/services", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 })
 
@@ -53,7 +62,7 @@ app.get("/", (req, res) => {
 })*/
 
 // response with result but request to index.html parts
-app.post("/", (req, res) => {
+app.post("/services", (req, res) => {
   let nombre = (req.body.firstName);
   let apellido = req.body.lastName;
   let fecha = req.body.date;

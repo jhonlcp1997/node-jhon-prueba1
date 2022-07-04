@@ -1,0 +1,132 @@
+[
+    {
+        "Ginecologia": [
+            {
+                "Ginecologico": [
+                    {
+                        "title": "¿Comer helado cura la gripe😑?",
+                        "img": "static/images/2-hierro_2.jpg",
+                        "content": "No lo se pero puede que si, uno no sabe"
+                    }
+                ],
+                "Menopausico":[
+                    {
+                        "title": "¿Comer Hielo cura la gripe😑?",
+                        "img": "static/images/2-hierro_2.jpg",
+                        "content": "No lo se pero puede que si, uno no sabe"
+                    },
+                    {
+                        "title": "¿Soy buen programador🤨?",
+                        "img": "static/images/3.jpg",
+                        "content": "Yo creo que no, por que como lo estoy haciendo desde cero todo yo solo, puede que no"
+                    }
+                ],
+                "Mamario":[
+                    {
+                        "title": "¿Terminaré de ver Rick y Morty?🤔",
+                        "img": "static/images/5.jpg",
+                        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel tenetur saepe eos magni, nemo laborum animi quaerat sint doloribus itaque! Non neque perspiciatis ducimus praesentium maiores minus possimus aperiam deleniti?"
+                    },
+                    {
+                        "title": "¿Qué es mejor, aventura-distópica o magia-detectivesca?",
+                        "img": "static/images/2.jpg",
+                        "content": "Preguntas que no te dejan dormir"
+                    }
+                    
+                ]
+            }
+        ],
+        "Gestacional": [
+            {
+                "Viabilidad": [
+                {
+                    "title": "¿Comer aji es bueno para la acidez😑?",
+                    "img": "static/images/2-hierro_2.jpg",
+                    "content": "No lo se pero puede que si, uno no sabe"
+                }
+
+                ],
+                "Genetico":[
+                    {
+                        "title": "¿Hasta que edad se pueden embarazar 🙄?",
+                        "img": "static/images/2.jpg",
+                        "content": "No lo se pero, hasta los 50 tal vez?"
+                    },
+                    {
+                        "title": "¿Soy buen escritor🤨?",
+                        "img": "static/images/3.jpg",
+                        "content": "Yo creo que no, por que como lo estoy haciendo desde cero todo yo solo, puede que no"
+                    }
+                ],
+                "Pre-Morfology":[
+                    {
+                        "title": "¿Terminaré de ver picky blinder?🤔",
+                        "img": "static/images/5.jpg",
+                        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel tenetur saepe eos magni, nemo laborum animi quaerat sint doloribus itaque! Non neque perspiciatis ducimus praesentium maiores minus possimus aperiam deleniti?"
+                    },
+                    {
+                        "title": "¿Qué es mejor, Cafe helado o jugo de tomate?",
+                        "img": "static/images/2.jpg",
+                        "content": "Preguntas que no te dejan dormir"
+                    }
+                    
+                ],
+                "Morfologico":[
+                    {
+                        "title": "¿Donde puedo encontrar libros gratis🙄?",
+                        "img": "static/images/2.jpg",
+                        "content": "No lo se pero, hasta los 50 tal vez?"
+                    },
+                    {
+                        "title": "¿Qué es mejor, papa noel o santa claus?",
+                        "img": "static/images/2.jpg",
+                        "content": "Preguntas que no te dejan dormir"
+                    }
+                    
+                ],
+                "Crecimiento-D":[
+                    {
+                        "title": "¿Esto es una base de datos🤨?",
+                        "img": "static/images/3.jpg",
+                        "content": "Yo creo que no, por que como lo estoy haciendo desde cero todo yo solo, puede que no"
+                    },
+                    {
+                        "title": "¿Qué es mejor, Dota2 o lol?",
+                        "img": "static/images/2.jpg",
+                        "content": "Preguntas que no te dejan dormir"
+                    }
+                    
+                ],
+                "Antenatal":[
+                    {
+                        "title": "¿Cuanto cuesta una Radiografia en Dubai?",
+                        "img": "static/images/3.jpg",
+                        "content": "Si el platano está 10 dolares, imaginate un radiografia"
+                    }
+                    
+                ]
+
+            }
+        ],
+        "Hormonal": [
+            {
+                "Adrenalina":[
+                    {
+                        "title": "¿Que tal es mi arroz con mariscos?",
+                        "img": "static/images/3.jpg",
+                        "content": "Si el platano está 10 dolares, imaginate un radiografia"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Error":[
+            {
+                "title": "NO ENCONTRADO",
+                "img": "static/images/Error.png",
+                "content": "LOS SENTIMOS, NO SE ENCONTRÓ LO QUE BUSCABAS"
+            }
+        ]
+    }
+]
