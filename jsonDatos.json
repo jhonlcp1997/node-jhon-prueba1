@@ -75,7 +75,7 @@
                     {
                         "title": "¿Donde puedo encontrar libros gratis🙄?",
                         "img": "static/images/2.jpg",
-                        "content": "No lo se pero, hasta los 50 tal vez?"
+                        "content": "El rincón del bago"
                     },
                     {
                         "title": "¿Qué es mejor, papa noel o santa claus?",
@@ -88,7 +88,7 @@
                     {
                         "title": "¿Esto es una base de datos🤨?",
                         "img": "static/images/3.jpg",
-                        "content": "Yo creo que no, por que como lo estoy haciendo desde cero todo yo solo, puede que no"
+                        "content": "NO, esto es solo un json"
                     },
                     {
                         "title": "¿Qué es mejor, Dota2 o lol?",
@@ -114,7 +114,7 @@
                     {
                         "title": "¿Que tal es mi arroz con mariscos?",
                         "img": "static/images/3.jpg",
-                        "content": "Si el platano está 10 dolares, imaginate un radiografia"
+                        "content": "Buenísimo, mejor que el de mi hermano"
                     }
                 ]
             }
