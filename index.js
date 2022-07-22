@@ -9,6 +9,7 @@ const emails = require('./static/email');
 const exportEjs = require('./static/ejs');
 const dbConnect = require('./config/mongo');
 const { createUser } = require('./controllers/users');
+const exportREsponse = require('./static/response');
 const jsonDatos = require(__dirname + '/jsonDatos.json');
 
 
@@ -110,6 +111,14 @@ app.post("/services", (req, res) => {
   // ? intento de FETCH
   exportEjs(res, props);
   // ? intento de FETCH
+})
+
+app.get('/response', (req, res)=>{
+  res.sendFile(__dirname + "/public/views/response.html")
+})
+
+app.post('/response', (req, res)=>{
+  exportREsponse()
 })
 
 // Todo: Conexion a la base de datos

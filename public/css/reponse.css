@@ -1,0 +1,26 @@
+.header-response{
+    width: 100%;
+    background-color: #5ff;
+}
+
+.header-response .form{
+    width: 20rem;
+    height: 5rem;
+    background-color: #f55;
+    color: #000;
+    margin: auto;
+}
+
+.header-response .form .input{
+    display: inline-block;
+    padding: .5rem;
+    max-width: 17rem;
+    width: 100%;
+}
+
+.header-response .form .link{
+    color: #000;
+    text-decoration: none;
+    background-color: #5f5;
+    padding: .2rem;
+}
