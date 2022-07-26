@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/reponse.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
+
 <body>
     <header class="header-response">
-        <form class="form" action="/response" method="post">
-            <input class="input" type="text" name="firstName" placeholder="Ingrese el nombre que desee buscar...">
-            <a class="link" href="/services">Regresar</a>
-            <button class="button" type="submit">Enviar</button>
+        <form class="form row g-3 needs-validation" action="/response" method="post">
+            <div class="col-md-4">
+                <input class="input" type="text" name="firstName" placeholder="Ingrese el nombre que desee buscar...">
+                <a class="" href="/services">Regresar</a>
+                <button class="button" type="submit">Enviar</button>
+            </div>
         </form>
     </header>
-    
+
 </body>
+
 </html>
